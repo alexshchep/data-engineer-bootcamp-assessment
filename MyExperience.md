@@ -42,11 +42,12 @@ I spent 2 to 3 days trying to get passed
 	
 I tried to: 
 <ul>
-<li>add directories to --driver-class-path
-<li>downloaded the hbase-common-2.0.0 and tried to add that to --jars
-<li>added /etc/hadoop/conf to $CLASSPATH, I've tried $ export SPARK_CLASSPATH=$SPARK_CLASSPATH:`hbase classpath`
+<li>add directories to `park-submit with --driver-class-path {dirs}
+<li>downloaded the hbase-common-2.0.0.jar and tried to add that with --jars
+<li>added /etc/hadoop/conf` to $CLASSPATH, I've tried `export SPARK_CLASSPATH=$SPARK_CLASSPATH:`hbase classpath`
 <li>implement https://issues.apache.org/jira/browse/HBASE-14750
-<li>https://stackoverflow.com/questions/32064607/java-lang-classnotfoundexception-org-apache-hadoop-hbase-<li>hbaseconfiguration. export HADOOP_CLASSPATH=`/usr/bin/hbase classpath`
+<li>https://stackoverflow.com/questions/32064607/java-lang-classnotfoundexception-org-apache-hadoop-hbase-hbaseconfiguration.
+<li> export HADOOP_CLASSPATH=/usr/bin/hbase classpath
 <li>change dependencies, code, 
 <li>restarting all the services, etc.. 
 </ul>
