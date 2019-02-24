@@ -39,4 +39,14 @@ I spent 2 to 3 days trying to get passed
 
 Exception in thread "main" java.lang.NoClassDefFoundError: org/apache/hadoop/hbase/HBaseConfiguration
 	
-but could not. I tried to add directories to --driver-class-path, I downloaded the hbase-common-2.0.0 and tried to add that to --jars. I've added /etc/hadoop/conf to $CLASSPATH, I've tried $ export SPARK_CLASSPATH=$SPARK_CLASSPATH:`hbase classpath`. I tried to implement https://issues.apache.org/jira/browse/HBASE-14750, https://stackoverflow.com/questions/32064607/java-lang-classnotfoundexception-org-apache-hadoop-hbase-hbaseconfiguration. export HADOOP_CLASSPATH=`/usr/bin/hbase classpath`. Ive tried to change dependencies, code, etc.. but couldnt figure it out. I tried restarting all the services too, but no luck. This was frustrating, especially since I was not able to figure it out.. I do feel like I learned about Hadoop though, so Im thankful for that. I have a better understanding about which service is used for what function.
+but could not. I tried to 
+add directories to --driver-class-path
+downloaded the hbase-common-2.0.0 and tried to add that to --jars
+added /etc/hadoop/conf to $CLASSPATH, I've tried $ export SPARK_CLASSPATH=$SPARK_CLASSPATH:`hbase classpath`
+implement https://issues.apache.org/jira/browse/HBASE-14750
+https://stackoverflow.com/questions/32064607/java-lang-classnotfoundexception-org-apache-hadoop-hbase-hbaseconfiguration. export HADOOP_CLASSPATH=`/usr/bin/hbase classpath`
+change dependencies, code, 
+restarting all the services
+etc.. 
+
+but couldnt figure it out.  This was frustrating, especially since I was not able to figure it out.. I do feel like I learned about Hadoop though, so Im thankful for that. I have a better understanding about which service is used for what function. It was difficult for me to solve issues, as I had no experience with Scala and almost no Hadoop experience.
