@@ -27,9 +27,9 @@ I've never worked with Scala before, so I did some tutorials, and tested Spark w
 In the sbt compilation, I checked the HBase, Scala, and hadoop version installed on the Linux VM, and used those. There were always warning about some dependencies being used over others. I was never sure whether that could create problems.
 
 To load the files I used 
-hadoop fs -put filename /user/root/, 
+`hadoop fs -put filename /user/root/`, 
 and to check the loaded files
-hadoop fs -ls. 
+`hadoop fs -ls`. 
 
 I had many issues with connection refused error for Hadoop. I did not find stackoverflow as useful as it usually is. I think that is because this is a smaller niche and functions get deprecated quickly. I ended up using the API documentation more than stackoverflow.
 
